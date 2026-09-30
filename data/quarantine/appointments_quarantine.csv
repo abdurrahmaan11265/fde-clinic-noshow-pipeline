@@ -1,0 +1,12 @@
+appointment_id,patient_id,gender,age,neighbourhood,scholarship,hypertension,diabetes,alcoholism,handicap_count,sms_received,no_show,scheduled_at,appointment_date,lead_days,flag_multi_same_day,quarantine_reason
+5679978,7839272661752,M,38,RESISTÊNCIA,0,0,0,0,1,0,1,2016-05-10T10:51:53Z,2016-05-09,-1,0,appointment_before_booking;
+5715660,7896293967868,F,19,SANTO ANTÔNIO,0,0,0,0,1,0,1,2016-05-18T14:50:41Z,2016-05-17,-1,0,appointment_before_booking;
+5700278,31963211613981,F,115,ANDORINHAS,0,0,0,0,1,0,1,2016-05-16T09:17:44Z,2016-05-19,3,1,age_out_of_range;
+5700279,31963211613981,F,115,ANDORINHAS,0,0,0,0,1,0,1,2016-05-16T09:17:44Z,2016-05-19,3,1,age_out_of_range;
+5664962,24252258389979,F,22,CONSOLAÇÃO,0,0,0,0,0,0,1,2016-05-05T13:43:58Z,2016-05-04,-1,0,appointment_before_booking;
+5562812,31963211613981,F,115,ANDORINHAS,0,0,0,0,1,0,1,2016-04-08T14:29:17Z,2016-05-16,38,0,age_out_of_range;
+5686628,998231581612122,F,81,SANTO ANTÔNIO,0,0,0,0,0,0,1,2016-05-11T13:49:20Z,2016-05-05,-6,1,appointment_before_booking;
+5655637,3787481966821,M,7,TABUAZEIRO,0,0,0,0,0,0,1,2016-05-04T06:50:57Z,2016-05-03,-1,0,appointment_before_booking;
+5744037,31963211613981,F,115,ANDORINHAS,0,0,0,0,1,0,0,2016-05-30T09:44:51Z,2016-05-30,0,0,age_out_of_range;
+5717451,748234579244724,F,115,SÃO JOSÉ,0,1,0,0,0,1,0,2016-05-19T07:57:56Z,2016-06-03,15,0,age_out_of_range;
+5775010,465943158731293,F,-1,ROMÃO,0,0,0,0,0,0,0,2016-06-06T08:58:13Z,2016-06-06,0,0,age_out_of_range;

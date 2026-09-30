@@ -1,0 +1,86 @@
+{
+  "run_id": "20260930T073221Z",
+  "offline": false,
+  "sources": [
+    {
+      "source": "appointments",
+      "type": "CSV file",
+      "url": "https://media.githubusercontent.com/media/TokoniK/exploratory-data-analysis/main/data/Database_No_show_appointments/noshowappointments-kagglev2-may-2016.csv",
+      "canonical": "https://www.kaggle.com/datasets/joniarroba/noshowappointments",
+      "path": "data/raw/appointments/appointments_9132d3e7d024.csv",
+      "bytes": 10739535,
+      "sha256": "9132d3e7d0246617df9041d3764f20ad6f08e7b0d9f0997fa254fc5e52eda27d",
+      "status": "fresh",
+      "retrieved_at": "2026-09-30T07:33:15.157166+00:00",
+      "rows": 110527
+    },
+    {
+      "source": "holidays",
+      "type": "JSON API",
+      "url": "https://date.nager.at/api/v3/PublicHolidays/2016/BR",
+      "params": null,
+      "path": "data/raw/holidays/holidays_2016_20260930T073315Z.json",
+      "bytes": 2552,
+      "sha256": "567f7776fbd3873428a0fed9c14f8a62003470be4d79c36babd8ff7b37880700",
+      "status": "fresh",
+      "retrieved_at": "2026-09-30T07:33:16.419789+00:00"
+    },
+    {
+      "source": "weather",
+      "type": "JSON API",
+      "url": "https://archive-api.open-meteo.com/v1/archive",
+      "params": {
+        "latitude": -20.3155,
+        "longitude": -40.3128,
+        "daily": "precipitation_sum,temperature_2m_max",
+        "timezone": "America/Sao_Paulo",
+        "start_date": "2016-04-29",
+        "end_date": "2016-06-08"
+      },
+      "path": "data/raw/weather/weather_2016-04-29_2016-06-08_20260930T073316Z.json",
+      "bytes": 1286,
+      "sha256": "8d530646277cdbc33af1c0bc9083fa5f26af4ceb07bd57a07f92247297bbe3b0",
+      "status": "fresh",
+      "retrieved_at": "2026-09-30T07:33:17.487294+00:00"
+    }
+  ],
+  "steps": {
+    "validate": {
+      "raw_rows": 110527,
+      "clean_rows": 110516,
+      "quarantined_rows": 11,
+      "soft_failures": [
+        "appointment_not_before_booking",
+        "age_in_0_110",
+        "one_appointment_per_patient_per_day",
+        "appointment_on_weekday",
+        "appointment_has_time_of_day",
+        "weekday_gaps_explained_by_holidays"
+      ]
+    },
+    "model": {
+      "patient": 62296,
+      "calendar_day": 41,
+      "appointment": 110516,
+      "reminder": 110516,
+      "outcome": 110516
+    },
+    "metrics": {
+      "kpi_advance_no_show": {
+        "appointments": 60017,
+        "no_shows": 17804,
+        "rate": 0.2966492827032341
+      },
+      "derived": {
+        "did_effect_pp": 3.944468055516613,
+        "extra_no_shows_from_outages": 654.0322482852097,
+        "outage_days": 7,
+        "appointment_days": 27,
+        "no_shows_per_appointment_day": 826.3333333333334
+      }
+    }
+  },
+  "status": "ok",
+  "error": null,
+  "seconds": 58.6
+}

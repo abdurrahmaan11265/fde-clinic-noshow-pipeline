@@ -1,0 +1,500 @@
+{
+  "kpi_advance_no_show": [
+    {
+      "appointments": 60017,
+      "no_shows": 17804,
+      "rate": 0.2966492827032341
+    }
+  ],
+  "overall": [
+    {
+      "appointments": 110516,
+      "no_shows": 22311,
+      "rate": 0.20188027073003004,
+      "patients": 62296,
+      "days": 27,
+      "clinics": 81,
+      "first_day": "2016-04-29",
+      "last_day": "2016-06-08"
+    }
+  ],
+  "guardrail_same_day": [
+    {
+      "appointments": 38561,
+      "rate": 0.04647182386348902
+    }
+  ],
+  "by_lead_bucket": [
+    {
+      "lead_bucket": "0 same day",
+      "appointments": 38561,
+      "no_show_rate": 0.04647182386348902,
+      "sms_rate": 0.0
+    },
+    {
+      "lead_bucket": "1-2 days",
+      "appointments": 11938,
+      "no_show_rate": 0.22742502931814373,
+      "sms_rate": 0.0
+    },
+    {
+      "lead_bucket": "3-7 days",
+      "appointments": 20245,
+      "no_show_rate": 0.2496912817979748,
+      "sms_rate": 0.5704124475179057
+    },
+    {
+      "lead_bucket": "8-14 days",
+      "appointments": 12025,
+      "no_show_rate": 0.3046985446985447,
+      "sms_rate": 0.5824532224532225
+    },
+    {
+      "lead_bucket": "15-30 days",
+      "appointments": 17370,
+      "no_show_rate": 0.32590673575129536,
+      "sms_rate": 0.6055843408175015
+    },
+    {
+      "lead_bucket": "31+ days",
+      "appointments": 10377,
+      "no_show_rate": 0.3299604895441843,
+      "sms_rate": 0.6177122482413029
+    }
+  ],
+  "naive_sms": [
+    {
+      "sms_received": 0,
+      "appointments": 75035,
+      "no_show_rate": 0.16694875724661826
+    },
+    {
+      "sms_received": 1,
+      "appointments": 35481,
+      "no_show_rate": 0.27575322003325725
+    }
+  ],
+  "sms_within_lead": [
+    {
+      "lead_bucket": "3-7 days",
+      "sms_received": 0,
+      "appointments": 2692,
+      "no_show_rate": 0.27191679049034173
+    },
+    {
+      "lead_bucket": "3-7 days",
+      "sms_received": 1,
+      "appointments": 11548,
+      "no_show_rate": 0.23761690335988916
+    },
+    {
+      "lead_bucket": "8-14 days",
+      "sms_received": 0,
+      "appointments": 1551,
+      "no_show_rate": 0.3185041908446164
+    },
+    {
+      "lead_bucket": "8-14 days",
+      "sms_received": 1,
+      "appointments": 7004,
+      "no_show_rate": 0.2811250713877784
+    },
+    {
+      "lead_bucket": "15-30 days",
+      "sms_received": 0,
+      "appointments": 2450,
+      "no_show_rate": 0.37142857142857144
+    },
+    {
+      "lead_bucket": "15-30 days",
+      "sms_received": 1,
+      "appointments": 10519,
+      "no_show_rate": 0.29803213233197073
+    },
+    {
+      "lead_bucket": "31+ days",
+      "sms_received": 0,
+      "appointments": 1262,
+      "no_show_rate": 0.3906497622820919
+    },
+    {
+      "lead_bucket": "31+ days",
+      "sms_received": 1,
+      "appointments": 6410,
+      "no_show_rate": 0.3020280811232449
+    }
+  ],
+  "coverage": [
+    {
+      "eligible": 60017,
+      "reminded": 35481,
+      "coverage": 0.5911824982921505,
+      "not_reminded": 24536,
+      "on_outage_days": 16581,
+      "missed_normal_days": 7955,
+      "coverage_normal_days": 0.8168569849894097
+    }
+  ],
+  "coverage_by_day": [
+    {
+      "appointment_date": "2016-04-29",
+      "eligible_appointments": 1619,
+      "coverage": 0.7875231624459543,
+      "is_outage": 0,
+      "weekday": 4
+    },
+    {
+      "appointment_date": "2016-05-02",
+      "eligible_appointments": 2787,
+      "coverage": 0.819519196268389,
+      "is_outage": 0,
+      "weekday": 0
+    },
+    {
+      "appointment_date": "2016-05-03",
+      "eligible_appointments": 2386,
+      "coverage": 0.8369656328583404,
+      "is_outage": 0,
+      "weekday": 1
+    },
+    {
+      "appointment_date": "2016-05-04",
+      "eligible_appointments": 1971,
+      "coverage": 0.8330796549974632,
+      "is_outage": 0,
+      "weekday": 2
+    },
+    {
+      "appointment_date": "2016-05-05",
+      "eligible_appointments": 1999,
+      "coverage": 0.7908954477238619,
+      "is_outage": 0,
+      "weekday": 3
+    },
+    {
+      "appointment_date": "2016-05-06",
+      "eligible_appointments": 1799,
+      "coverage": 0.7581989994441356,
+      "is_outage": 0,
+      "weekday": 4
+    },
+    {
+      "appointment_date": "2016-05-09",
+      "eligible_appointments": 2849,
+      "coverage": 0.0,
+      "is_outage": 1,
+      "weekday": 0
+    },
+    {
+      "appointment_date": "2016-05-10",
+      "eligible_appointments": 2462,
+      "coverage": 0.8334687246141349,
+      "is_outage": 0,
+      "weekday": 1
+    },
+    {
+      "appointment_date": "2016-05-11",
+      "eligible_appointments": 2118,
+      "coverage": 0.8342776203966006,
+      "is_outage": 0,
+      "weekday": 2
+    },
+    {
+      "appointment_date": "2016-05-12",
+      "eligible_appointments": 2068,
+      "coverage": 0.7683752417794971,
+      "is_outage": 0,
+      "weekday": 3
+    },
+    {
+      "appointment_date": "2016-05-13",
+      "eligible_appointments": 2021,
+      "coverage": 0.0,
+      "is_outage": 1,
+      "weekday": 4
+    },
+    {
+      "appointment_date": "2016-05-14",
+      "eligible_appointments": 21,
+      "coverage": 0.6190476190476191,
+      "is_outage": 0,
+      "weekday": 5
+    },
+    {
+      "appointment_date": "2016-05-16",
+      "eligible_appointments": 2995,
+      "coverage": 0.0,
+      "is_outage": 1,
+      "weekday": 0
+    },
+    {
+      "appointment_date": "2016-05-17",
+      "eligible_appointments": 2567,
+      "coverage": 0.0,
+      "is_outage": 1,
+      "weekday": 1
+    },
+    {
+      "appointment_date": "2016-05-18",
+      "eligible_appointments": 2157,
+      "coverage": 0.0,
+      "is_outage": 1,
+      "weekday": 2
+    },
+    {
+      "appointment_date": "2016-05-19",
+      "eligible_appointments": 2096,
+      "coverage": 0.0,
+      "is_outage": 1,
+      "weekday": 3
+    },
+    {
+      "appointment_date": "2016-05-20",
+      "eligible_appointments": 1896,
+      "coverage": 0.0,
+      "is_outage": 1,
+      "weekday": 4
+    },
+    {
+      "appointment_date": "2016-05-24",
+      "eligible_appointments": 2445,
+      "coverage": 0.8302658486707567,
+      "is_outage": 0,
+      "weekday": 1
+    },
+    {
+      "appointment_date": "2016-05-25",
+      "eligible_appointments": 2291,
+      "coverage": 0.8306416412047141,
+      "is_outage": 0,
+      "weekday": 2
+    },
+    {
+      "appointment_date": "2016-05-30",
+      "eligible_appointments": 2874,
+      "coverage": 0.8406402226861517,
+      "is_outage": 0,
+      "weekday": 0
+    },
+    {
+      "appointment_date": "2016-05-31",
+      "eligible_appointments": 2620,
+      "coverage": 0.8393129770992367,
+      "is_outage": 0,
+      "weekday": 1
+    },
+    {
+      "appointment_date": "2016-06-01",
+      "eligible_appointments": 2067,
+      "coverage": 0.8268021286889211,
+      "is_outage": 0,
+      "weekday": 2
+    },
+    {
+      "appointment_date": "2016-06-02",
+      "eligible_appointments": 2082,
+      "coverage": 0.8054755043227666,
+      "is_outage": 0,
+      "weekday": 3
+    },
+    {
+      "appointment_date": "2016-06-03",
+      "eligible_appointments": 1959,
+      "coverage": 0.8014293006636038,
+      "is_outage": 0,
+      "weekday": 4
+    },
+    {
+      "appointment_date": "2016-06-06",
+      "eligible_appointments": 3073,
+      "coverage": 0.7953140253823625,
+      "is_outage": 0,
+      "weekday": 0
+    },
+    {
+      "appointment_date": "2016-06-07",
+      "eligible_appointments": 2617,
+      "coverage": 0.8139090561711884,
+      "is_outage": 0,
+      "weekday": 1
+    },
+    {
+      "appointment_date": "2016-06-08",
+      "eligible_appointments": 2178,
+      "coverage": 0.8443526170798898,
+      "is_outage": 0,
+      "weekday": 2
+    }
+  ],
+  "outage_did": [
+    {
+      "eligible": 0,
+      "outage_day": 0,
+      "appointments": 37122,
+      "no_show_rate": 0.08927320726253973
+    },
+    {
+      "eligible": 0,
+      "outage_day": 1,
+      "appointments": 13377,
+      "no_show_rate": 0.0891829259176198
+    },
+    {
+      "eligible": 1,
+      "outage_day": 0,
+      "appointments": 43436,
+      "no_show_rate": 0.2857767750253246
+    },
+    {
+      "eligible": 1,
+      "outage_day": 1,
+      "appointments": 16581,
+      "no_show_rate": 0.3251311742355708
+    }
+  ],
+  "outage_by_lead": [
+    {
+      "lead_bucket": "0 same day",
+      "outage_day": 0,
+      "appointments": 28240,
+      "no_show_rate": 0.045786118980169974
+    },
+    {
+      "lead_bucket": "0 same day",
+      "outage_day": 1,
+      "appointments": 10321,
+      "no_show_rate": 0.048348028291832185
+    },
+    {
+      "lead_bucket": "1-2 days",
+      "outage_day": 0,
+      "appointments": 8882,
+      "no_show_rate": 0.22753884260301735
+    },
+    {
+      "lead_bucket": "1-2 days",
+      "outage_day": 1,
+      "appointments": 3056,
+      "no_show_rate": 0.22709424083769633
+    },
+    {
+      "lead_bucket": "3-7 days",
+      "outage_day": 0,
+      "appointments": 14240,
+      "no_show_rate": 0.24410112359550562
+    },
+    {
+      "lead_bucket": "3-7 days",
+      "outage_day": 1,
+      "appointments": 6005,
+      "no_show_rate": 0.26294754371357204
+    },
+    {
+      "lead_bucket": "8-14 days",
+      "outage_day": 0,
+      "appointments": 8555,
+      "no_show_rate": 0.2879018118059614
+    },
+    {
+      "lead_bucket": "8-14 days",
+      "outage_day": 1,
+      "appointments": 3470,
+      "no_show_rate": 0.34610951008645535
+    },
+    {
+      "lead_bucket": "15-30 days",
+      "outage_day": 0,
+      "appointments": 12969,
+      "no_show_rate": 0.31189760197393784
+    },
+    {
+      "lead_bucket": "15-30 days",
+      "outage_day": 1,
+      "appointments": 4401,
+      "no_show_rate": 0.36718927516473526
+    },
+    {
+      "lead_bucket": "31+ days",
+      "outage_day": 0,
+      "appointments": 7672,
+      "no_show_rate": 0.3166058394160584
+    },
+    {
+      "lead_bucket": "31+ days",
+      "outage_day": 1,
+      "appointments": 2705,
+      "no_show_rate": 0.3678373382624769
+    }
+  ],
+  "by_rain": [
+    {
+      "rain": "1 dry (<1mm)",
+      "days": 20,
+      "appointments": 82525,
+      "no_show_rate": 0.20265374129051802
+    },
+    {
+      "rain": "2 light (1-10mm)",
+      "days": 5,
+      "appointments": 20292,
+      "no_show_rate": 0.20411985018726592
+    },
+    {
+      "rain": "3 heavy (10mm+)",
+      "days": 2,
+      "appointments": 7699,
+      "no_show_rate": 0.18768671256007274
+    }
+  ],
+  "repeat_no_show_patients": [
+    {
+      "patients": 62296,
+      "patients_2plus_no_shows": 3222,
+      "share_of_no_shows": 0.3528752633230245
+    }
+  ],
+  "slots_lost_per_week": [
+    {
+      "week": "17",
+      "appointments": 3235,
+      "no_shows": 633
+    },
+    {
+      "week": "18",
+      "appointments": 20949,
+      "no_shows": 4264
+    },
+    {
+      "week": "19",
+      "appointments": 21721,
+      "no_shows": 4646
+    },
+    {
+      "week": "20",
+      "appointments": 21452,
+      "no_shows": 4661
+    },
+    {
+      "week": "21",
+      "appointments": 7918,
+      "no_shows": 1570
+    },
+    {
+      "week": "22",
+      "appointments": 21655,
+      "no_shows": 4074
+    },
+    {
+      "week": "23",
+      "appointments": 13586,
+      "no_shows": 2463
+    }
+  ],
+  "derived": {
+    "did_effect_pp": 3.944468055516613,
+    "extra_no_shows_from_outages": 654.0322482852097,
+    "outage_days": 7,
+    "appointment_days": 27,
+    "no_shows_per_appointment_day": 826.3333333333334
+  }
+}

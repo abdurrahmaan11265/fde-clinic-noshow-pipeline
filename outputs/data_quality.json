@@ -1,0 +1,134 @@
+{
+  "profile": {
+    "rows": 110527,
+    "columns": [
+      "PatientId",
+      "AppointmentID",
+      "Gender",
+      "ScheduledDay",
+      "AppointmentDay",
+      "Age",
+      "Neighbourhood",
+      "Scholarship",
+      "Hipertension",
+      "Diabetes",
+      "Alcoholism",
+      "Handcap",
+      "SMS_received",
+      "No-show"
+    ],
+    "nulls": {},
+    "distinct": {
+      "PatientId": 62299,
+      "AppointmentID": 110527,
+      "Gender": 2,
+      "ScheduledDay": 103549,
+      "AppointmentDay": 27,
+      "Age": 104,
+      "Neighbourhood": 81,
+      "Scholarship": 2,
+      "Hipertension": 2,
+      "Diabetes": 2,
+      "Alcoholism": 2,
+      "Handcap": 5,
+      "SMS_received": 2,
+      "No-show": 2
+    },
+    "no_show_values": {
+      "No": 88208,
+      "Yes": 22319
+    },
+    "handcap_values": {
+      "0": 108286,
+      "1": 2042,
+      "2": 183,
+      "3": 13,
+      "4": 3
+    },
+    "age_min": -1,
+    "age_max": 115,
+    "appointment_time_nonzero": 0
+  },
+  "checks": [
+    {
+      "rule": "required_columns",
+      "passed": true,
+      "detail": "missing=[]",
+      "severity": "hard"
+    },
+    {
+      "rule": "row_count_matches_source",
+      "passed": true,
+      "detail": "110527 rows, expected 110527",
+      "severity": "hard"
+    },
+    {
+      "rule": "appointment_id_unique",
+      "passed": true,
+      "detail": "0 duplicate AppointmentID",
+      "severity": "hard"
+    },
+    {
+      "rule": "outcome_values_known",
+      "passed": true,
+      "detail": "unexpected No-show values=[]",
+      "severity": "hard"
+    },
+    {
+      "rule": "appointment_not_before_booking",
+      "passed": false,
+      "detail": "5 rows quarantined",
+      "severity": "soft"
+    },
+    {
+      "rule": "age_in_0_110",
+      "passed": false,
+      "detail": "6 rows quarantined (ages [-1, 115])",
+      "severity": "soft"
+    },
+    {
+      "rule": "one_appointment_per_patient_per_day",
+      "passed": false,
+      "detail": "16200 rows share patient+day; kept and flagged (could be two specialties or a double booking: unknown)",
+      "severity": "soft"
+    },
+    {
+      "rule": "appointment_on_weekday",
+      "passed": false,
+      "detail": "39 Saturday appointments; kept",
+      "severity": "soft"
+    },
+    {
+      "rule": "appointment_has_time_of_day",
+      "passed": false,
+      "detail": "AppointmentDay is date-only in every row; time-of-day analysis impossible",
+      "severity": "soft"
+    },
+    {
+      "rule": "weekday_gaps_explained_by_holidays",
+      "passed": false,
+      "detail": "missing weekdays=['2016-05-23', '2016-05-26', '2016-05-27']; holiday explains {'2016-05-26': 'Corpus Christi'}; unexplained=['2016-05-23', '2016-05-27']",
+      "severity": "soft"
+    },
+    {
+      "rule": "weather_covers_all_dates",
+      "passed": true,
+      "detail": "uncovered=[]",
+      "severity": "hard"
+    }
+  ],
+  "calendar": {
+    "weekdays_missing": [
+      "2016-05-23",
+      "2016-05-26",
+      "2016-05-27"
+    ],
+    "explained_by_holiday": {
+      "2016-05-26": "Corpus Christi"
+    },
+    "unexplained": [
+      "2016-05-23",
+      "2016-05-27"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+2026-09-30 13:02:21,292 INFO    pipeline.retrieve  appointments: downloading https://media.githubusercontent.com/media/TokoniK/exploratory-data-analysis/main/data/Database_No_show_appointments/noshowappointments-kagglev2-may-2016.csv
+2026-09-30 13:03:16,419 INFO    pipeline.retrieve  holidays: saved holidays_2016_20260930T073315Z.json (2552 bytes)
+2026-09-30 13:03:17,487 INFO    pipeline.retrieve  weather: saved weather_2016-04-29_2016-06-08_20260930T073316Z.json (1286 bytes)
+2026-09-30 13:03:17,735 INFO    pipeline.validate  [PASS] required_columns: missing=[]
+2026-09-30 13:03:17,735 INFO    pipeline.validate  [PASS] row_count_matches_source: 110527 rows, expected 110527
+2026-09-30 13:03:17,736 INFO    pipeline.validate  [PASS] appointment_id_unique: 0 duplicate AppointmentID
+2026-09-30 13:03:17,745 INFO    pipeline.validate  [PASS] outcome_values_known: unexpected No-show values=[]
+2026-09-30 13:03:18,199 WARNING pipeline.validate  [FAIL] appointment_not_before_booking: 5 rows quarantined
+2026-09-30 13:03:18,199 WARNING pipeline.validate  [FAIL] age_in_0_110: 6 rows quarantined (ages [-1, 115])
+2026-09-30 13:03:18,208 WARNING pipeline.validate  [FAIL] one_appointment_per_patient_per_day: 16200 rows share patient+day; kept and flagged (could be two specialties or a double booking: unknown)
+2026-09-30 13:03:18,213 WARNING pipeline.validate  [FAIL] appointment_on_weekday: 39 Saturday appointments; kept
+2026-09-30 13:03:18,213 WARNING pipeline.validate  [FAIL] appointment_has_time_of_day: AppointmentDay is date-only in every row; time-of-day analysis impossible
+2026-09-30 13:03:18,223 INFO    pipeline.validate  clean rows=110516, quarantined=11
+2026-09-30 13:03:18,247 WARNING pipeline.validate  [FAIL] weekday_gaps_explained_by_holidays: missing weekdays=['2016-05-23', '2016-05-26', '2016-05-27']; holiday explains {'2016-05-26': 'Corpus Christi'}; unexplained=['2016-05-23', '2016-05-27']
+2026-09-30 13:03:18,247 INFO    pipeline.validate  [PASS] weather_covers_all_dates: uncovered=[]
+2026-09-30 13:03:19,177 INFO    pipeline.model     warehouse tables: {'patient': 62296, 'calendar_day': 41, 'appointment': 110516, 'reminder': 110516, 'outcome': 110516}; FK violations=0
+2026-09-30 13:03:19,932 INFO    pipeline.metrics   KPI advance no-show rate=0.297; coverage=0.591; outage days=7; DiD=+3.9pp
+2026-09-30 13:03:19,933 INFO    pipeline           run 20260930T073221Z finished: ok (exit 0)

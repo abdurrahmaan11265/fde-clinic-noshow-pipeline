@@ -1,6 +1,6 @@
 # Clinic no-shows: a dependable data pipeline
 
-FDE assignment, Mohammed Abdur Rahman (roll 10130). The 2-page brief is `report/brief.pdf`.
+FDE assignment, Mohammed Abdur Rahman (roll 10130). The 2-page brief is [`report/brief.pdf`](report/brief.pdf).
 
 **Finding:** in 110,516 real appointments from Vitória's public clinics (Apr–Jun 2016), the
 SMS reminder reached 0% of eligible patients on 7 of 27 appointment days, and nothing flagged
